@@ -21,4 +21,11 @@ export class UserService {
 
   }
 
+  posts(): Observable<Post[]> {
+    return this.http.get<Post[]>('https://jsonplaceholder.typicode.com/posts');
+  }
+
+  commentsOfPost(id): Observable<Comment[]> {
+   return this.http.get<Comment[]>(`https://jsonplaceholder.typicode.com/comments?postId=${id}`)
+  }
 }

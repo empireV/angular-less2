@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "lesson2Services"
+    }
+  },
+  "defaultProject": "lesson2Services",
+  "cli": {
+    "analytics": false
+  }
 }

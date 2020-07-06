@@ -5,11 +5,13 @@ import {AppComponent} from './components/app/app.component';
 import {UserComponent} from './components/user/user.component';
 import {HttpClientModule} from '@angular/common/http';
 import {UserService} from './services/user/user.service';
+import { PostComponent } from './components/post/post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent
+    UserComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
